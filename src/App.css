@@ -1,0 +1,136 @@
+/* App.css */
+/* Fullscreen red background */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('/background.jpg'), #ff3c00;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+select,
+input[type="text"] {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.5rem;
+}
+
+
+/* Responsive Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.product-card.active,
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  background: #f0f8ff;
+}
+
+.product-card img {
+  max-width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #1a8917;
+}
+
+.product-card .category {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.product-detail {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.product-detail .detail-img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.product-detail .description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-detail .rating {
+  color: #ffa500;
+  margin-bottom: 0.5rem;
+}
+
+.product-detail .price-detail {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a8917;
+}
+
+.loading {
+  text-align: center;
+  font-style: italic;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
