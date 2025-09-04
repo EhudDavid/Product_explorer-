@@ -32,4 +32,4 @@ git clone https://github.com/your-username/fake-store-explorer.git
 cd fake-store-explorer
 
 
-<img width="1867" height="911" alt="image" src="https://github.com/user-attachments/assets/c57e1c66-0ed3-4e87-bd27-a3f50dc5185d" />
+
